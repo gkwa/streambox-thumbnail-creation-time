@@ -1,4 +1,7 @@
-t: calc
+list_heavy_mplayer_commands: calc
+	grep mplayer calc | sort -nr | head -100
+
+list_heavy_find_commands: calc
 	grep find calc | sort -nr | head -100
 
 calc: extract_frame_time_log.txt
