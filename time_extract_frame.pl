@@ -41,7 +41,7 @@ while(<F>)
     # 2.70	mplayer c:\Apache\htdocs\ls\actl3files\69.90.235.91-28285-091813-123138_242.mov -aid 89 -vo jpeg:quality=90:outdir=290642563131681 -frames 1000
     if($command =~ m{mplayer}){
         my ($abspath) = ($command =~ /mplayer (\S*) /);
-        my ($fname) = ($abspath =~ m{([^/]*)$});
+        my ($fname) = ($abspath =~ m{([^\\]*)$});
         print "\t";
         print "$fname";
 
