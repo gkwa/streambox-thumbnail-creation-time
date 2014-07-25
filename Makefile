@@ -1,10 +1,9 @@
-thumb:
-	bash -o pipefail -c 'powershell -inputformat none -executionpolicy bypass -noprofile -noninteractive -file create-thumb.ps1'
-
-t9: extract_frame_time_log.txt
 t9: current_liveus_list.txt
 t9: long_time_files_modified.txt
 	grep --file=$< current_liveus_list.txt | grep -iF .actl3 | sed -e 's,\.actl3$$,,'
+
+thumb:
+	bash -o pipefail -c 'powershell -inputformat none -executionpolicy bypass -noprofile -noninteractive -file create-thumb.ps1'
 
 t8: current_liveus_list.txt
 t8: long_time_files_modified.txt
@@ -13,7 +12,7 @@ t8: long_time_files_modified.txt
 long_time_files_modified.txt: long_time_files.txt
 	@sed -e 's,_th$$,,' $< >$@
 
-long_time_files.txt:
+long_time_files.txt: extract_frame_time_log.txt
 	@sh run.sh | sort -n | tail -100 | awk '{print $$11}' >$@
 
 t7: current_liveus_list.txt
