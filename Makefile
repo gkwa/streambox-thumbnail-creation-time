@@ -22,19 +22,19 @@ current_liveus_list.txt:
 	ssh liveus 'cd /d/actl3files && ls' >$@
 
 t6: extract_frame_time_log.txt
-	sh -x run.sh | sort -n | tail -100 | awk '{print $$11}'
+	perl -w time_extract_frame.pl extract_frame_time_log.txt | sort -n | tail -100 | awk '{print $$11}'
 
 t5: extract_frame_time_log.txt
-	sh -x run.sh | sort -n | tail -100 | awk '{print $$1,$$11}'
+	perl -w time_extract_frame.pl extract_frame_time_log.txt | sort -n | tail -100 | awk '{print $$1,$$11}'
 
 t4: extract_frame_time_log.txt
-	sh -x run.sh | sort -n | tail -100
+	perl -w time_extract_frame.pl extract_frame_time_log.txt | sort -n | tail -100
 
 t3: extract_frame_time_log.txt
-	sh -x run.sh | head -1000 | sort -n
+	perl -w time_extract_frame.pl extract_frame_time_log.txt | head -1000 | sort -n
 
 t2: extract_frame_time_log.txt
-	sh -x run.sh | head -1000 | tail -100
+	perl -w time_extract_frame.pl extract_frame_time_log.txt | head -1000 | tail -100
 
 t: extract_frame_time_log.txt
 	perl -w time_extract_frame.pl extract_frame_time_log.txt
