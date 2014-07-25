@@ -1,13 +1,6 @@
 thumb:
 	bash -o pipefail -c 'powershell -inputformat none -executionpolicy bypass -noprofile -noninteractive -file create-thumb.ps1'
 
-t10: t9
-t10: out.txt
-	$(MAKE) t9 | while read f; do echo $$f; cat out.txt | grep $$f; done;
-
-out.txt:
-	$(MAKE) t >$@
-
 t9: extract_frame_time_log.txt
 t9: current_liveus_list.txt
 t9: long_time_files_modified.txt
