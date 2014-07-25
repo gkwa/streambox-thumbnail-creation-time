@@ -1,4 +1,4 @@
-gettime.txt: extract_frame_time_log.txt
+timecalculated.txt: extract_frame_time_log.txt
 	perl -w time_extract_frame.pl extract_frame_time_log.txt >$@
 
 thumb:
@@ -8,4 +8,4 @@ extract_frame_time_log.txt:
 	rsync 'liveus:/c/windows/temp/tmp/extract_frame_time_log.txt' .
 
 clean:
-	rm -f gettime.txt
+	rm -f timecalculated.txt
