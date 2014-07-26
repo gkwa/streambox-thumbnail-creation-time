@@ -6,7 +6,8 @@ test ! -s calc && exit
 
 while test -z "$c"
 do
-    fbase=$(make lhm | awk '{print $(NF)}' | gshuf | head -1 \
+    fbase=$(make list_heavy_mplayer_commands \
+	| awk '{print $(NF)}' | gshuf | head -1 \
 	| sed -e 's,_th$,,')
     c=$(grep $fbase current)
     echo checking $fbase

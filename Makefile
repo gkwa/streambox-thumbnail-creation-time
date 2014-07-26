@@ -2,9 +2,10 @@ getone: calc
 getone: current
 	sh getone.sh
 
+heavy: list_heavy_mplayer_commands
 lhm: list_heavy_mplayer_commands
 list_heavy_mplayer_commands: calc
-	grep mplayer calc | sort -nr | head -100
+	sort -n calc | tail -100 | grep ^3 -A 100
 
 current:
 	ssh liveus "cd /d/actl3files && ls" >current
