@@ -1,9 +1,12 @@
+c=""
 fbase=""
 
-while test -z "$fbase"
+while test -z "$c"
 do
     fbase=$(make lhm | awk '{print $(NF)}' | gshuf | head -1 \
 	| sed -e 's,_th$,,')
+    c=$(grep $fbase current)
+    echo checking $fbase
 done
 
 grep $fbase current
