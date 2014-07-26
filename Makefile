@@ -1,6 +1,14 @@
+getone:
+	sh getone.sh
+
+lhm: list_heavy_mplayer_commands
 list_heavy_mplayer_commands: calc
 	grep mplayer calc | sort -nr | head -100
 
+current:
+	ssh liveus "cd /d/actl3files && ls" >current
+
+lhf: list_heavy_find_commands
 list_heavy_find_commands: calc
 	grep find calc | sort -nr | head -100
 
@@ -15,3 +23,4 @@ extract_frame_time_log.txt:
 
 clean:
 	rm -f calc
+	rm -f current
