@@ -70,7 +70,7 @@ for ($i=1; $i -le 4; $i++)
 "@
 }
 
-if(1000 -gt (Get-item $mov_output_abspath).length/1kb)
+if(!(test-path "$mov_output_abspath"))
 {
     Write-Host "$mov_output_abspath couldnt be found"
     Exit 1
