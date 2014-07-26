@@ -23,6 +23,7 @@ $actl3_basename="172.56.32.75-30766-071514-131930_921"
 $actl3_basename="50.202.229.50-17873-070214-203821_651"
 
 # 15.56 minutes	8:58:20 9:13:54	mplayer c:\Apache\htdocs\ls\actl3files\166.137.214.170-42268-062814-205420_183_th.mov -aid 89 -vo jpeg:quality=90:outdir=21406158525088 -frames 1000	166.137.214.170-42268-062814-205420_183_th.mov	166.137.214.170-42268-062814-205420_183_th
+# Mplayer runs indefinitely when run manually, so maybe sls.exe kills this off after 15 minutes
 $actl3_basename="166.137.214.170-42268-062814-205420_183"
 
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
