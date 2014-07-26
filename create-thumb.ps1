@@ -28,6 +28,12 @@ $actl3_basename="166.137.212.30-33040-070114-122720_374"
 # Elapsed Time: 4 minutes
 $actl3_basename="70.199.138.55-4957-070114-212212_461"
 
+# 4.08 minutes	11:25:38 11:29:43	mplayer c:\Apache\htdocs\ls\actl3files\172.56.33.111-9871-072414-112317_1697_th.mov -aid 89 -vo jpeg:quality=90:outdir=3260174964186 -frames 1000	172.56.33.111-9871-072414-112317_1697_th.mov	172.56.33.111-9871-072414-112317_1697_th
+$actl3_basename="172.56.33.111-9871-072414-112317_1697"
+
+# 4.18 minutes	8:43:00 8:47:11	mplayer c:\Apache\htdocs\ls\actl3files\50.202.229.50-17873-070214-203821_651_th.mov -aid 89 -vo jpeg:quality=90:outdir=102157387731 -frames 1000	50.202.229.50-17873-070214-203821_651_th.mov	50.202.229.50-17873-070214-203821_651_th
+$actl3_basename="50.202.229.50-17873-070214-203821_651"
+
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
 $actl3_sourcedir="$cwd\long-thumbnails"
 
