@@ -70,6 +70,13 @@ for ($i=1; $i -le 4; $i++)
 "@
 }
 
+if(1000 -gt (Get-item $mov_output_abspath).length/1kb)
+{
+    Write-Host "$mov_output_abspath couldnt be found"
+    Exit 1
+}
+
+
 ##################################################
 # Check if mov has audio
 ##################################################
