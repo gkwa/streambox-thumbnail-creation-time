@@ -12,6 +12,9 @@ $actl3_basename="70.199.138.55-4957-070114-212212_461"
 # 4.16 minutes	1:50:35 1:54:45	mplayer c:\Apache\htdocs\ls\actl3files\172.56.32.75-30766-071514-131930_921_th.mov -aid 89 -vo jpeg:quality=90:outdir=154862914428332 -frames 1000	172.56.32.75-30766-071514-131930_921_th.mov	172.56.32.75-30766-071514-131930_921_th
 $actl3_basename="172.56.32.75-30766-071514-131930_921"
 
+# 5.46 minutes	4:02:42 4:08:10	mplayer c:\Apache\htdocs\ls\actl3files\69.90.235.91-14591-062514-155936_142_th.mov -aid 89 -vo jpeg:quality=90:outdir=1776805631947 -frames 1000	69.90.235.91-14591-062514-155936_142_th.mov	69.90.235.91-14591-062514-155936_142_th
+$actl3_basename="69.90.235.91-14591-062514-155936_142"
+
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
 $actl3_sourcedir="$cwd\long-thumbnails"
 
