@@ -4,8 +4,6 @@ $WarningPreference = 'stop'
 
 $cwd = (Get-Location).Path
 
-$actl3_basename="172.56.32.125-5896-062514-155431_141"
-
 # 6.61 minutes	12:28:19 12:34:56	mplayer c:\Apache\htdocs\ls\actl3files\166.137.212.30-33040-070114-122720_374_th.mov -aid 89 -vo jpeg:quality=90:outdir=1424743446956 -frames 1000	166.137.212.30-33040-070114-122720_374_th.mov	166.137.212.30-33040-070114-122720_374_th
 $actl3_basename="166.137.212.30-33040-070114-122720_374"
 
@@ -24,8 +22,8 @@ $actl3_basename="172.56.32.75-30766-071514-131930_921"
 # Elapsed Time: 4 minutes
 $actl3_basename="50.202.229.50-17873-070214-203821_651"
 
-$actl3_basename="166.137.214.170-42268-062814-205420_183"
 # 15.56 minutes	8:58:20 9:13:54	mplayer c:\Apache\htdocs\ls\actl3files\166.137.214.170-42268-062814-205420_183_th.mov -aid 89 -vo jpeg:quality=90:outdir=21406158525088 -frames 1000	166.137.214.170-42268-062814-205420_183_th.mov	166.137.214.170-42268-062814-205420_183_th
+$actl3_basename="166.137.214.170-42268-062814-205420_183"
 
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
 $actl3_sourcedir="$cwd\long-thumbnails"
@@ -46,8 +44,8 @@ $mov_logfile_fname="$mov_logfile_basename.log"
 $mov_logfile_outdir="$cwd"
 
 $mplayer_logfile_outdir="$cwd"
-$mplayer_log_basename = "$mov_fname"
-$mplayer_log_fname = "$mov_fname.err"
+$mplayer_log_basename="$mov_fname"
+$mplayer_log_fname="$mov_fname.err"
 $mplayer_logfile_outdir="$cwd"
 
 $jpeg_basename="$actl3_basename"
