@@ -5,6 +5,7 @@ $WarningPreference = 'stop'
 $cwd = (Get-Location).Path
 
 $actl3_basename="172.56.32.125-5896-062514-155431_141"
+$actl3_basename="70.199.138.55-4957-070114-212212_461"
 
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
 $actl3_sourcedir="$cwd\long-thumbnails"

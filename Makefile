@@ -1,4 +1,5 @@
-getone:
+getone: calc
+getone: current
 	sh getone.sh
 
 lhm: list_heavy_mplayer_commands

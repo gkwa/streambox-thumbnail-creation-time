@@ -1,6 +1,9 @@
 c=""
 fbase=""
 
+test ! -s current && exit
+test ! -s calc && exit
+
 while test -z "$c"
 do
     fbase=$(make lhm | awk '{print $(NF)}' | gshuf | head -1 \
