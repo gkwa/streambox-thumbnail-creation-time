@@ -33,6 +33,7 @@ $actl3_basename="70.199.138.55-4957-070114-212212_461"
 $actl3_basename="50.202.229.50-17873-070214-203821_651"
 
 # 4.08 minutes	11:25:38 11:29:43	mplayer c:\Apache\htdocs\ls\actl3files\172.56.33.111-9871-072414-112317_1697_th.mov -aid 89 -vo jpeg:quality=90:outdir=3260174964186 -frames 1000	172.56.33.111-9871-072414-112317_1697_th.mov	172.56.33.111-9871-072414-112317_1697_th
+# Elapsed Time: 3 minutes
 $actl3_basename="172.56.33.111-9871-072414-112317_1697"
 
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
