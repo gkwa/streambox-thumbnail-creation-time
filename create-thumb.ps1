@@ -5,6 +5,8 @@ $WarningPreference = 'stop'
 $cwd = (Get-Location).Path
 
 $actl3_basename="172.56.32.125-5896-062514-155431_141"
+
+# 3.90 minutes	9:23:04 9:26:58	mplayer c:\Apache\htdocs\ls\actl3files\70.199.138.55-4957-070114-212212_461_th.mov -aid 89 -vo jpeg:quality=90:outdir=207222727918905 -frames 1000	70.199.138.55-4957-070114-212212_461_th.mov	70.199.138.55-4957-070114-212212_461_th
 $actl3_basename="70.199.138.55-4957-070114-212212_461"
 
 $actl3_sourcedir="c:\Apache\htdocs\ls\actl3files"
